@@ -2,7 +2,7 @@
 
 [[Data]](https://github.com/Hypotheses-Paradise/HP-V0)
 [[Paper]]()
-[[Colab example]](https://drive.google.com/file/d/1h-Gj7r8qcl5_DFesjov93aa9TiR---5p/view?usp=sharing)
+[[Colab example]](https://drive.google.com/file/d/1fE6xfmc0uFNyBQLsuQSYBnQ17ZZfP7pD/view?usp=sharing)
 
 Hypotheses Paradise (HP) is an open-sourced dataset that collects N-best hypotheses and ground-truth transcription from popular ASR datasets.
 Here we provide a recipe to generate HP dataset using [Whisper](https://github.com/openai/whisper), a robust large-scale ASR model developed by OpenAI.
@@ -40,7 +40,7 @@ Necessary files are provided in the `whisper` directory. Please kindly follow th
     python generate_hp_dataset.py
     ```
 
-## More analysis
+## Visualizations and analysis
 
-We also provide a [Colab example](https://drive.google.com/file/d/1h-Gj7r8qcl5_DFesjov93aa9TiR---5p/view?usp=sharing) to further visualize and analyze our generated HP dataset.
+We present a [Colab example](https://drive.google.com/file/d/1fE6xfmc0uFNyBQLsuQSYBnQ17ZZfP7pD/view?usp=sharing) to further visualize and analyze our generated HP dataset.
 
