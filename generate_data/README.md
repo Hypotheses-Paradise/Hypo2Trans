@@ -26,19 +26,15 @@ pip install -e .
 
 ## Usage
 
-Necessary files are provided in the `whisper` directory. Please kindly follow the steps below to generate HP dataset:
+Necessary files are provided in the `whisper` directory. Please run the following command to generate HP dataset:
 
-1. open the file `generate_hp_dataset.py` and specify some data paths:
+```bash
+python generate_hp_dataset.py --asr_wav /path/to/wav.scp --asr_txt /path/to/text --hp_json /path/to/hp.json
+```
 
-    - `asr_wav`: contains a list of audio files, same as the kaldi-format file "wav.scp";
-    - `asr_txt`: contains a list of transcriptions, same as the kaldi-format file "text";
-    - `hp_json`: generated HP dataset in .json format;
-
-2. Execute it to generate HP dataset:
-
-    ```bash
-    python generate_hp_dataset.py
-    ```
+- `asr_wav`: contains a list of audio paths, where each line indicates a sample, e.g. "utt_id_1 /path/to/1.wav";
+- `asr_txt`: contains a list of transcriptions, where each line indicates a sample, e.g. "utt_id_1 i have a dream";
+- `hp_json`: generated HP dataset in .json format, where each item indicates a sample, e.g. {'input': ['i have a dream', 'i have dream', 'i had a dream', 'i have a drink', 'i have a drill'], 'output': 'i have a dream'}, here the 'input' contains N-best hypotheses and the 'output' is ground-truth transcription;
 
 ## Visualizations and analysis
 
