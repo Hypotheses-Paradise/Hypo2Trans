@@ -1,15 +1,17 @@
 # Hypo2Trans
 Single-blind supplementary materials for NeurIPS 2023 submission
 
-| Test   Set  | Baseline | LM $_{rank}$ | T5-${ft}$  | LLaMA-${ft}$ | T5-$LoRA$ | LLaMA-$LoRA$   | $o_{nb}$   | $o_{cp}$ |
+
+The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetuning setting, where $o_{nb}$ and $o_{cp}$ respectively denote n-best oracle and compositional oracle:
+| Test   Set  | Baseline | LM $_{rank}$ | T5-*ft*  | LLaMA-*ft* | T5-*LoRA* | LLaMA-*LoRA*   | $o_{nb}$   | $o_{cp}$ |
 |-------------|----------|---------|--------|-------|----------|-------|--------|------|
-| WSJ         | $4.5$      | $4.3_{\textcolor{teal}{-4.4\%}}$     | $4.0$      | $x$     | $2.7_{-40.0\%}$      | $\textbf{2.2}_{\textcolor{teal}{-51.1\%}}$   | $4.1$    | $1.2$  |
-| ATIS        | $8.3$      | $6.9_{\textcolor{teal}{-16.9\%}}$     | $2.7$    | $x$     | $\textbf{1.7}_{-79.5\%}$      | $1.9_{\textcolor{teal}{-77.1\%}}$   | $5.2$    | $1.1$  |
-| CHiME-4     | $11.1$     | $11.0_{\textcolor{teal}{-0.9\%}}$      | $7.9$    | $x$     | $7.0_{-36.9\%}$        | $\textbf{6.6}_{\textcolor{teal}{-40.5\%}}$   | $9.1$    | $2.8$  |
-| Tedlium-3   | $8.5$      | $8.0_{\textcolor{teal}{-5.8\%}}$       | $6.6$    | $x$     | $7.4_{-12.9\%}$      | $\textbf{4.6}_{\textcolor{teal}{-45.9\%}}$   | $3.0$      | $0.7$  |
-| CV-$accent$   | $14.8$     | $16.0_{\textcolor{gray}{+8.1\%}}$      | $12.9$   | $x$     | $11.0_{-25.7\%}$       | $\textbf{11.0}_{\textcolor{teal}{-25.7\%}}$    | $11.4$   | $7.9$  |
-| SwitchBoard | $15.7$     | $15.4_{\textcolor{teal}{-1.9\%}}$    | $15.9$   | $x$     | $14.9_{-5.1\%}$     | $\textbf{14.1}_{\textcolor{teal}{-10.2\%}}$  | $12.6$   | $4.2$  |
-| LRS2        | $10.1$     | $9.6_{\textcolor{teal}{-5.0\%}}$     | $9.5$    | $x$     | $\textbf{6.6}_{-34.7\%}$      | $8.8_{\textcolor{teal}{-12.9\%}}$   | $6.9$    | $2.6$  |
-| CORAAL      | $21.4$     | $21.4_{\textcolor{teal}{-0\%}}$    | $23.1$   | $x$    | $20.9_{-2.3\%}$     | $\textbf{19.2}_{\textcolor{teal}{-10.3\%}}$  | $21.8$   | $10.7$ |
+| WSJ         | 4.5      | 4.3<sub>-4.4%</sub>     | 4.0<sub>-11.1%</sub>      |      | 2.7<sub>-40.0%</sub>      | **2.2<sub>-51.1%</sub>**   | 4.1    | 1.2  |
+| ATIS        | 8.3      | 6.9<sub>-16.9%</sub>     | 2.7<sub>-67.5%</sub>    |      | **1.7<sub>-79.5%</sub>**      | 1.9<sub>-77.1%</sub>   | 5.2    | 1.1  |
+| CHiME-4     | 11.1     | 11.0<sub>-0.9%</sub>      | 7.9<sub>-28.8%</sub>    |      | 7.0<sub>-36.9%</sub>        | **6.6<sub>-40.5%</sub>**   | 9.1    | 2.8  |
+| Tedlium-3   | 8.5      | 8.0<sub>-5.8%</sub>       | 6.6<sub>-22.4%</sub>    |      | 7.4<sub>-12.9%</sub>      | **4.6<sub>-45.9%</sub>**   | 3.0      | 0.7  |
+| CV-accent   | 14.8     | 16.0<sub>+8.1%</sub>      | 12.9<sub>-12.8%</sub>   |      | 11.0<sub>-25.7%</sub>       | **11.0<sub>-25.7%</sub>**    | 11.4   | 7.9  |
+| SwitchBoard | 15.7     | 15.4<sub>-1.9%</sub>    | 15.9<sub>+1.3%</sub>   |      | 14.9<sub>-5.1%</sub>     | **14.1<sub>-10.2%</sub>**  | 12.6   | 4.2  |
+| LRS2        | 10.1     | 9.6<sub>-5.0%</sub>     | 9.5<sub>-5.9%</sub>    |      | **6.6<sub>-34.7%</sub>**      | 8.8<sub>-12.9%</sub>   | 6.9    | 2.6  |
+| CORAAL      | 21.4     | 21.4<sub>-0.0%</sub>    | 23.1<sub>+7.9%</sub>   |     | 20.9<sub>-2.3%</sub>     | **19.2<sub>-10.3%</sub>**  | 21.8   | 10.7 |
 
 [Form](https://forms.gle/8p4TVbZXbfHPtqaQA) to request fine-tuning code along with terms of use agreement to prevent malicious uses.
