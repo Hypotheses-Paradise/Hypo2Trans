@@ -15,3 +15,12 @@ The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetu
 | CORAAL      | 21.4     | 21.4<sub>-0.0%</sub>    | 23.1<sub>+7.9%</sub>   |   22.9<sub>+7.0%</sub>  | 20.9<sub>-2.3%</sub>     | **19.2<sub>-10.3%</sub>**  | 21.8   | 10.7 |
 
 [Form](https://forms.gle/8p4TVbZXbfHPtqaQA) to request fine-tuning code along with terms of use agreement to prevent malicious uses.
+
+```bib
+@article{chen2023hp,
+  title={HyPoradise: An Open Baseline for Generative Speech Recognition with Large Language Models},
+  author={Chen, Chen and Hu, Yuchen and Yang, Chao-Han Huck and Siniscalchi, Sabato Marco and Chen, Pin-Yu and Chng, Eng Siong},
+  journal={Proc. of NeurIPS},
+  year={2023}
+}
+```
