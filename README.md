@@ -16,11 +16,14 @@ The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetu
 
 [Form](https://forms.gle/8p4TVbZXbfHPtqaQA) to request fine-tuning code along with terms of use agreement to prevent malicious uses.
 
+
+## Reference
+
 ```bib
-@article{chen2023hp,
+@inproceedings{chen2023hyporadise,
   title={HyPoradise: An Open Baseline for Generative Speech Recognition with Large Language Models},
-  author={Chen, Chen and Hu, Yuchen and Yang, Chao-Han Huck and Siniscalchi, Sabato Marco and Chen, Pin-Yu and Chng, Eng Siong},
-  journal={Proc. of NeurIPS},
+  author={CHEN, CHEN and Hu, Yuchen and Yang, Chao-Han Huck and Siniscalchi, Sabato Marco and Chen, Pin-Yu and Chng, Ensiong},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
   year={2023}
 }
 ```
