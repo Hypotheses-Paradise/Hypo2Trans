@@ -21,6 +21,7 @@ You can modify it using your own task description.
 
 ## Usage ##
 
+```
 python finetune.py \
     --base_model 'yahma/llama-7b-hf' \
     --data_path './data/train_wsj.json' \
@@ -32,4 +33,5 @@ python finetune.py \
     --learning_rate 2e-4 \
     --micro_batch_size=64 \
     --batch_size=256 \
-    --lora_r=16 
+    --lora_r=16
+```
