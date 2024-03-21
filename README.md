@@ -1,5 +1,6 @@
 # Hypo2Trans
-Single-blind supplementary materials for NeurIPS 2023 submission
+
+- The hypotheses-to-transcription (H2T) training in NeurIPS 2023 and IEEE ASRU 2023.
 
 
 The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetuning setting, where $o_{nb}$ and $o_{cp}$ respectively denote n-best oracle and compositional oracle:
@@ -17,8 +18,18 @@ The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetu
 
 
 ## Reference
+- ASRU 2023 and NeurIPS 2023
 
 ```bib
+@inproceedings{yang2023generative,
+  title={Generative speech recognition error correction with large language models and task-activating prompting},
+  author={Yang, Chao-Han Huck and Gu, Yile and Liu, Yi-Chieh and Ghosh, Shalini and Bulyko, Ivan and Stolcke, Andreas},
+  booktitle={2023 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
+}
+
 @inproceedings{chen2023hyporadise,
   title={HyPoradise: An Open Baseline for Generative Speech Recognition with Large Language Models},
   author={CHEN, CHEN and Hu, Yuchen and Yang, Chao-Han Huck and Siniscalchi, Sabato Marco and Chen, Pin-Yu and Chng, Ensiong},
