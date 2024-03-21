@@ -2,6 +2,27 @@
 
 - The hypotheses-to-transcription (H2T) training in NeurIPS 2023 and IEEE ASRU 2023.
 
+- Fine-tuning Llama-7b for ASR-LLM Correction 
+
+```bash
+
+$git clone https://github.com/Hypotheses-Paradise
+
+$cd Hypo2Trans/H2T-LoRA
+
+$python finetune.py \
+    --base_model 'yahma/llama-7b-hf' \
+    --data_path './data/train_wsj.json' \
+    --output_dir './wsj' \
+    --lora_target_modules='[q_proj,k_proj, v_proj, o_proj]' \
+    --num_epochs=10 \
+    --cutoff_len=512 \
+    --group_by_length \
+    --learning_rate 2e-4 \
+    --micro_batch_size=64 \
+    --batch_size=256 \
+    --lora_r=16
+```
 
 The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetuning setting, where $o_{nb}$ and $o_{cp}$ respectively denote n-best oracle and compositional oracle:
 | Test   Set  | Baseline | LM $_{rank}$ | T5-*ft*  | LLaMA-*ft* | T5-*LoRA* | LLaMA-*LoRA*   | $o_{nb}$   | $o_{cp}$ |
