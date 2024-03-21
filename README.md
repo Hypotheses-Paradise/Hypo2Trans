@@ -4,7 +4,7 @@
 
 - Fine-tuning Llama-7b for ASR-LLM Correction 
 
-<p align="center">  <img src="https://github.com/Hypotheses-Paradise/Hypo2Trans/blob/main/image-H2T.png" height ="450"> </p>
+<p align="center">  <img src="https://github.com/Hypotheses-Paradise/Hypo2Trans/blob/main/image-H2T.png" height ="150"> </p>
 
 
 ```bash
