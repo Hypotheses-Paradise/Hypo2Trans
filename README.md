@@ -39,7 +39,7 @@ The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetu
 
 
 ## Reference
-- Please consider to cite NeurIPS 2023 and ASRU 2023 works
+- Please consider to cite NeurIPS 2023 and ASRU 2023 works, thank you.
 
 ```bib
 @inproceedings{yang2023generative,
