@@ -1,8 +1,11 @@
 # Hypo2Trans
 
-- The hypotheses-to-transcription (H2T) training in NeurIPS 2023 and IEEE ASRU 2023.
+- The hypotheses-to-transcription (H2T) training in NeurIPS 2023 and IEEE ASRU 2023
 
 - Fine-tuning Llama-7b for ASR-LLM Correction 
+
+<p align="center">  <img src="https://github.com/Hypotheses-Paradise/Hypo2Trans/blob/main/image-H2T.png" height ="450"> </p>
+
 
 ```bash
 
