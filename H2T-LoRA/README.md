@@ -1,23 +1,23 @@
 # H2T-LoRA Training
 ## Prompt Template ##
-Please see the template in templates/H2T-LoRA.json
+Please see the template in `templates/H2T-LoRA.json`
 
 You can modify it using your own task description.
 
 ## Path ##
---data_path: Your data path includes Hypo-Trans pairs.
+`--data_path`: Your data path includes Hypo-Trans pairs.
 
---output_dir: The path to save LoRA weight
+`--output_dir`: The path to save LoRA weight
 
 ## Other Hyperparameters ##
 
---base_model: The foundation model for H2T learning
+`--base_model`: The foundation model for H2T learning
 
---lora_r: LoRA rank
+`--lora_r`: LoRA rank
 
---lora_target_modules: The modules to apply the LoRA update matrices, e.g., ["q_proj", "k_proj", "v_proj", "o_proj"], 
+`--lora_target_modules`: The modules to apply the LoRA update matrices, e.g., ["q_proj", "k_proj", "v_proj", "o_proj"], 
 
---val_set_size: The validation set size from training set.
+`--val_set_size`: The validation set size from training set.
 
 ## Usage ##
 
