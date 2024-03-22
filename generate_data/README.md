@@ -1,4 +1,4 @@
-# Hypotheses Paradise: Generation
+# Hypotheses Paradise: Whisper N-Best Hypotheses Generation
 
 [[Data]](https://github.com/Hypotheses-Paradise/HP-V0)
 [[Paper]]()
