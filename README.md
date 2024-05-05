@@ -9,11 +9,11 @@
 
 ```bash
 
-$git clone https://github.com/Hypotheses-Paradise
+git clone https://github.com/Hypotheses-Paradise
 
-$cd Hypo2Trans/H2T-LoRA
+cd Hypo2Trans/H2T-LoRA
 
-$python finetune.py \
+python finetune.py \
     --base_model 'yahma/llama-7b-hf' \
     --data_path './data/train_wsj.json' \
     --output_dir './wsj' \
@@ -25,6 +25,13 @@ $python finetune.py \
     --micro_batch_size=64 \
     --batch_size=256 \
     --lora_r=16
+```
+
+- Inference with Llama-7b + well-trained LoRA
+
+```bash
+
+python inference.py --ckpt_path './wsj' --test_data_path './data/test_wsj.json'
 ```
 
 The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetuning setting, where $o_{nb}$ and $o_{cp}$ respectively denote n-best oracle and compositional oracle:
