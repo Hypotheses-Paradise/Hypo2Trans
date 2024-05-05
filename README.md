@@ -27,11 +27,13 @@ python finetune.py \
     --lora_r=16
 ```
 
-- Inference with Llama-7b + well-trained LoRA
+- Inference with LLaMA-7b + well-trained LoRA
 
 ```bash
 
-python inference.py --ckpt_path './wsj' --test_data_path './data/test_wsj.json'
+python inference.py \
+    --ckpt_path './wsj'
+    --test_data_path './data/test_wsj.json'
 ```
 
 The table below presents the WER(%) results of H2T-*ft* and H2T-*LoRA* in finetuning setting, where $o_{nb}$ and $o_{cp}$ respectively denote n-best oracle and compositional oracle:
