@@ -1,4 +1,4 @@
-# H2T-LoRA Training
+# H2T-LoRA Training and Inference
 ## Prompt Template ##
 Please see the template in `templates/H2T-LoRA.json`
 
@@ -21,7 +21,8 @@ You can modify it using your own task description.
 
 ## Usage ##
 
-```
+Finetune LLaMA-7b with LoRA tuning:
+```bash
 python finetune.py \
     --base_model 'yahma/llama-7b-hf' \
     --data_path './data/train_wsj.json' \
@@ -35,3 +36,11 @@ python finetune.py \
     --batch_size=256 \
     --lora_r=16
 ```
+
+Then, inference with LLaMA-7b + well-trained LoRA:
+```bash
+python inference.py \
+    --ckpt_path './wsj'
+    --test_data_path './data/test_wsj.json'
+```
+
