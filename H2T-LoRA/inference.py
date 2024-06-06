@@ -1,9 +1,6 @@
 import os
 import sys
-import pandas as pd
 import editdistance
-import fire
-import gradio as gr
 import torch
 import transformers
 from peft import PeftModel
@@ -97,7 +94,7 @@ if __name__ == '__main__':
         return prompter.get_response(output)
 
 
-    with open(test_data_path, 'r') as f:
+    with open(args.test_data_path, 'r') as f:
         test_data = json.load(f)
 
     before = 0
@@ -116,6 +113,7 @@ if __name__ == '__main__':
         prediction = re.sub(r'[^\w\s]|[\d]', '', prediction)
         best_hypo = re.sub(r'[^\w\s]|[\d]', '', best_hypo)
         ground_truth = re.sub(r'[^\w\s]|[\d]', '', ground_truth)
+        prediction = re.sub(r'\n+.+', '', prediction)
 
         try:
             wer_prediction = calculate_wer(prediction.split(), ground_truth.split())
