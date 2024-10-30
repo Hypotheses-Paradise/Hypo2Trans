@@ -2,7 +2,7 @@
 
 - The hypotheses-to-transcription (H2T) training in NeurIPS 2023 and IEEE ASRU 2023
 
-- Hugging Face [!img](https://huggingface.co/front/assets/huggingface_logo.svg)
+- 🤗 [HP-v0 Dataset](https://huggingface.co/datasets/PeacefulData/HyPoradise-v0) 
 
 - Fine-tuning Llama-7b for ASR-LLM Correction 
 
