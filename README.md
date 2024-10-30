@@ -4,7 +4,8 @@
 
 - 🤗 [HP-v0 Dataset](https://huggingface.co/datasets/PeacefulData/HyPoradise-v0) 
 
-- Fine-tuning Llama-7b for ASR-LLM Correction 
+- 🤗 [Pre-Trained N-best LLaMA-7B](https://huggingface.co/GenSEC-LLM/SLT-Task1-Llama2-7b-HyPo-baseline)
+
 
 <p align="center">  <img src="https://github.com/Hypotheses-Paradise/Hypo2Trans/blob/main/image-H2T.png" height ="150"> </p>
 
